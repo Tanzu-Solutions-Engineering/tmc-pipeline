@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tmc cluster create -f cluster.yaml
+tmc cluster create -f ../cluster.yaml
 
 if [ $? -eq 0 ]
 then
@@ -8,12 +8,12 @@ then
   exit 0
 else
   echo "cluster create command failed.  Trying upgrade"
-  tmc cluster update -f cluster.yaml
+  tmc cluster update -f ../cluster.yaml
 fi
 
 if [ $? -ne 0 ]
 then
   echo "cluster upgrade command failed"
 else
-  echo "cluster upgrade command successfully executed"  
+  echo "cluster upgrade command successfully executed"
 fi
