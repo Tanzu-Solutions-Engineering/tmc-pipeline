@@ -1,0 +1,41 @@
+fullName:
+  managementClusterName: caas2
+  name: cli-created-cluster
+  provisionerName: workload
+meta:
+  labels: null
+  resourceVersion: 92621:22158546
+spec:
+  clusterGroupName: default
+  tkgServiceVsphere:
+    distribution:
+      version: v1.18.19+vmware.1-tkg.1.17af790
+    settings:
+      network:
+        pods:
+          cidrBlocks:
+          - 172.20.0.0/16
+        services:
+          cidrBlocks:
+          - 10.96.0.0/16
+      storage:
+        classes: null
+        defaultClass: tanzu
+    topology:
+      controlPlane:
+        class: best-effort-small
+        highAvailability: false
+        storageClass: tanzu
+      nodePools:
+      - info:
+          description: default description for the nodepool
+          name: default-node-pool
+        spec:
+          tkgServiceVsphere:
+            class: best-effort-small
+            storageClass: tanzu
+          workerNodeCount: "1"
+type:
+  kind: Cluster
+  package: vmware.tanzu.manage.v1alpha1.cluster
+  version: v1alpha1
