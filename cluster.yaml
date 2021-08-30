@@ -9,7 +9,7 @@ spec:
   clusterGroupName: default
   tkgServiceVsphere:
     distribution:
-      version: v1.18.19+vmware.1-tkg.1.17af790
+      version: v1.19.7+vmware.1-tkg.1.fc82c41
     settings:
       network:
         pods:
