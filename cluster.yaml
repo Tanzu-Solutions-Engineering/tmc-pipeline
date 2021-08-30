@@ -34,7 +34,7 @@ spec:
           tkgServiceVsphere:
             class: best-effort-small
             storageClass: tanzu
-          workerNodeCount: "4"
+          workerNodeCount: "2"
 type:
   kind: Cluster
   package: vmware.tanzu.manage.v1alpha1.cluster
