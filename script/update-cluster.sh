@@ -13,8 +13,8 @@ fi
 
 if [ $? -ne 0 ]
 then
-  echo "cluster upgrade command failed"
+  echo "cluster update command failed"
   exit 1
 else
-  echo "cluster upgrade command successfully executed"
+  echo "cluster update command successfully executed"
 fi
