@@ -7,7 +7,7 @@ then
   echo "cluster create command successfully executed"
   exit 0
 else
-  echo "cluster create command failed.  Trying upgrade"
+  echo "cluster create command failed.  Trying update"
   tmc cluster update -f cluster.yaml
 fi
 
