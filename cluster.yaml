@@ -4,7 +4,7 @@ fullName:
   provisionerName: workload
 meta:
   labels: null
-  resourceVersion: 95670:34417618
+  resourceVersion: 96910:40835375
 spec:
   clusterGroupName: default
   tkgServiceVsphere:
@@ -34,7 +34,7 @@ spec:
           tkgServiceVsphere:
             class: best-effort-small
             storageClass: tanzu
-          workerNodeCount: "3"
+          workerNodeCount: "1"
 type:
   kind: Cluster
   package: vmware.tanzu.manage.v1alpha1.cluster
