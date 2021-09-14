@@ -4,7 +4,7 @@ fullName:
   provisionerName: workload
 meta:
   labels: null
-  resourceVersion: 96910:40835375
+  resourceVersion: 97080:41670674
 spec:
   clusterGroupName: default
   tkgServiceVsphere:
